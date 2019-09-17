@@ -22,22 +22,22 @@ int main() {
 		for (i = 1; i <= n; i++) {
 			stepan = stepan * 2;
 			factory = factory * i;
-			proi = proi*(1 + (1 / (i*i)));
+			proi = proi*(1+1/pow(i,2));
 			kor = sqrt(kor) + sqrt(2);
 		}
 
 	}
 	else if (n < 0) {
-		for (i = 1; i >= n; i--) {
-			stepan = stepan * 2;
+		for (i = -1; i >= n; i--) {
+			stepan = stepan * 1/2;
 			factory = factory * i;
-			proi = proi*(1 + (1 / (i*i)));
+			proi = proi*(1 + 1 / pow(i,2));
 			kor = sqrt(kor) + sqrt(2);
 
 
 		}
 	}
-	cout << "Результат 2 в степени n " << stepan << "\n" << " Результат n! " << factory << "\n" << " Результат произведений " << proi << "\n" << "Результат корней" << kor;
+	cout << "Результат 2 в степени n " << stepan << "\n" << " Результат n! " << factory << "\n" << " Результат произведений " << proi << "\n" << "Результат корней " << kor << "\n";
 	system("pause");
 	return 0;
 }
