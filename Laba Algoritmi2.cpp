@@ -10,7 +10,7 @@ int main() {
 	n = 0;
 	for (i = 100; i <= b; i++)
 	{
-		n = n + i;
+		n = n + i*i;
 	}
 	b = b - 100 + 1;
 	n = n / b;
