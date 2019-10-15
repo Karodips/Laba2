@@ -12,7 +12,7 @@ int main() {
 	cout << "Теперь задайте массивю.\n";
 		for (i = 0; i < n; i++) {
 		cin >> arr[i];
-		if (arr[i] > b) arr[i] = 0;
+		if (arr[i] < b) arr[i] = 0;
 		}
 		for (i = 0; i < n; i++) cout << arr[i] << " ";
 		cout << "\n";
